@@ -29,7 +29,7 @@ headerRight.className = 'header-right'
 const headerButton = document.createElement('button')
 headerButton.textContent = 'Home'
 // Add Pico.css class names to style the button
-headerButton.className = 'button'
+// headerButton.className = 'button'
 
 
 // Add a click event listener to the 'headerButton' that redirects to the home page
