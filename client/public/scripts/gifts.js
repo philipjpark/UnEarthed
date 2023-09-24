@@ -68,5 +68,12 @@ const renderGifts = async () => {
     }
 }
 
-// Call the renderGifts function to render the gifts on the webpage
-renderGifts()
+const requestedUrl = window.location.href.split('/').pop()
+    if (requestedUrl) {
+    window.location.href = '../404.html'
+}
+else {
+    // Call the renderGifts function to render the gifts on the webpage
+    renderGifts()
+}
+
