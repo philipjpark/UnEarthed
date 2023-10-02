@@ -7,6 +7,8 @@ import { fileURLToPath } from 'url'
 //Import giftData from the data/gift.js.
 import giftData from '../data/gifts.js'
 
+import GiftsController from '../controllers/gifts.js'
+
 //Convert the import.meta.url property to a file path and store the result in a variable called __filename
 const __filename = fileURLToPath(import.meta.url)
 
@@ -17,9 +19,11 @@ const __dirname = path.dirname(__filename)
 const router = express.Router()
 
 //Create a GET route at the / endpoint that responds with status 200 and sends a JSON of the giftData.
-router.get('/', (req, res) => {
-    res.status(200).json(giftData)
-  })
+// router.get('/', (req, res) => {
+//     res.status(200).json(giftData)
+//   })
+
+router.get('/', GiftsController.getGifts)
 
 //Create another GET route at the /:giftId endpoint that responds with status 200 and sends the gift.html file (we'll be creating this later).
 router.get('/:giftId', (req, res) => {
