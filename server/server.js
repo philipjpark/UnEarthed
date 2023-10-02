@@ -1,5 +1,7 @@
 import express from 'express'
 
+import './config/dotenv.js'
+
 //Import the router from routes/gifts.js
 import giftsRouter from './routes/gifts.js'
 
