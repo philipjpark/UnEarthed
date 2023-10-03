@@ -9,7 +9,7 @@ const createGiftsTable = async () => {
         CREATE TABLE IF NOT EXISTS gifts (
             id SERIAL PRIMARY KEY,
             name VARCHAR(255) NOT NULL,
-            pricePoint VARCHAR(10) NOT NULL,
+            pricePoint NUMERIC(10, 2) NOT NULL,
             audience VARCHAR(255) NOT NULL,
             image VARCHAR(255) NOT NULL,
             description TEXT NOT NULL,
