@@ -14,9 +14,9 @@
 
 }
 
-.card img {
+/* .card img {
     height: 100%;
-}
+} */
 
 .top-container {
     background-repeat: no-repeat;
@@ -24,6 +24,13 @@
     background-position: center center;
     height: 250px;
 }
+
+.top-container img {
+    float: right;
+    max-height: 40px;
+    margin-top: 10px;
+    margin-right: 8px; 
+  }
 
 .bottom-container {
     margin-top:30px;
@@ -43,3 +50,4 @@
     color: rgb(228, 16, 133);
     text-decoration: none;
 }
+
